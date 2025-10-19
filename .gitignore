@@ -1,0 +1,40 @@
+# --- Python build/cache files ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+*.bak
+
+# --- Environment / local config ---
+.env
+.venv/
+venv/
+.env.local
+*.env
+
+# --- OS / Editor junk ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# --- GitHub Actions temp ---
+.github/*.log
+.github/workflows/*.bak
+
+# --- JSON backups (optional) ---
+data/*.tmp
+data/backup_*.json
+
+# --- Virtual environment / build outputs ---
+build/
+dist/
+.eggs/
+*.egg-info/
+
