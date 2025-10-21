@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "source": "User-provided raw stats",
+    "createdBy": "Alex",
+    "createdOn": "2025-10-21",
+    "description": "Performance, reach, and infrastructure metrics for blockchain-related services"
+  },
+  "data": {
+    "trustedProfessionals": 310,
+    "experienceYears": 6,
+    "projectsDelivered": 500,
+    "blockchains": 150,
+    "securityToolsOnGitHub": 40,
+    "telegramChannels": 15,
+    "cryptohunterxBlockchains": 10,
+    "cryptohunterxSpeed": 4000,
+    "cryptohunterxPlatforms": 5,
+    "cryptohunterxSatisfiedClients": 210,
+    "crackbtcSatisfiedClients": 150,
+    "cryptocraxBlockchains": 150,
+    "cryptocraxSpeed": "4000x5",
+    "cryptocraxSatisfiedClients": 150,
+    "usersProtected": "1k"
+  }
+}
