@@ -20,6 +20,10 @@
     "cryptocraxBlockchains": 150,
     "cryptocraxSpeed": "4000x5",
     "cryptocraxSatisfiedClients": 150,
-    "usersProtected": "1k"
+    "usersProtected": "1k",
+    "MobileDesktopApp": 30,
+    "CustomEnter": 15,
+    "TechCunsult": 10,
+    "WebDevelopment": 20
   }
 }
