@@ -1,0 +1,11 @@
+{
+  "id": "ann_2025_10_vritraai",
+  "active": true,
+  "title": "🤖 VritraAI Has Officially Launched!",
+  "message": "Say hello to VritraAI — our next-gen artificial intelligence platform built for privacy, speed, and precision. Now live across all VritraSec products. Experience the future of AI, engineered by Alex Butler.",
+  "released": "2025-10-15T05:30:00Z",
+  "expire_days": 7,
+  "button": true,
+  "button_text": "Explore VritraAI",
+  "button_link": "https://vritraai.vritrasec.com"
+}
