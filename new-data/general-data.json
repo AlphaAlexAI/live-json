@@ -6,9 +6,9 @@
     "description": "Performance, reach, and infrastructure metrics for blockchain-related services"
   },
   "data": {
-    "trustedProfessionals": 310,
+    "trustedProfessionals": 510,
     "experienceYears": 6,
-    "projectsDelivered": 500,
+    "projectsDelivered": 493,
     "blockchains": 150,
     "securityToolsOnGitHub": 40,
     "telegramChannels": 15,
@@ -20,7 +20,7 @@
     "cryptocraxBlockchains": 150,
     "cryptocraxSpeed": "4000x5",
     "cryptocraxSatisfiedClients": 150,
-    "usersProtected": "1k",
+    "usersProtected": "1K",
     "MobileDesktopApp": 30,
     "CustomEnter": 15,
     "TechCunsult": 10,
