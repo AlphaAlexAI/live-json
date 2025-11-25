@@ -1,0 +1,11 @@
+{
+  "id": "ann_2025_11_vritraai_launch_v1",
+  "active": true,
+  "title": "🚀 VritraAI Is Officially Live - The Next-Gen AI Terminal Experience!",
+  "message": "VritraAI is now officially live! A fast, intelligent, and futuristic AI-powered terminal shell designed for developers who want speed, clarity, and power. Packed with smart commands, modular features, and a sleek neon interface - VritraAI brings AI directly into your command line.",
+  "released": "2025-11-26T10:00:00Z",
+  "expire_days": 5,
+  "button": true,
+  "button_text": "Explore VritraAI",
+  "button_link": "https://vritraai.vritrasec.com"
+}
