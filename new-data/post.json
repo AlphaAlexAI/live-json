@@ -1,11 +1,11 @@
 {
-  "id": "ann_2025_10_vritrasec_v2",
+  "id": "ann_2025_02_vritraai_release",
   "active": true,
-  "title": "🚀 VritraSec v2 Is Live - Fully Rebuilt & Cloudflare-Powered!",
-  "message": "A new era begins! VritraSec v2 is now officially live — redesigned from the ground up with a futuristic UI, enhanced performance, and military-grade security. Hosted on Cloudflare Pages with global CDN, lightning-fast load times, and full SSL protection. Explore the upgraded Labs, Tools, and AI systems — all unified under one powerful ecosystem.",
-  "released": "2025-10-31T10:30:00Z",
-  "expire_days": 5,
+  "title": "🚀 VritraAI Now Live!",
+  "message": "The next-gen AI terminal shell is officially released — featuring 100+ built-in commands, AI explanations, code review, advanced project intelligence, theme system, prompt styling, and full Linux + Termux support. Dive into the new documentation, explore the command index, and experience what an AI-enhanced shell truly feels like.",
+  "released": "2025-02-17T12:30:00Z",
+  "expire_days": 7,
   "button": true,
-  "button_text": "Visit VritraSec",
-  "button_link": "https://vritrasec.com"
+  "button_text": "Explore VritraAI",
+  "button_link": "https://vritraai.vritrasec.com"
 }
