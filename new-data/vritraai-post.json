@@ -1,11 +1,11 @@
 {
-  "id": "ann_2025_11_vritraai_launch_v1",
+  "id": "ann_2025_12_vritraai_update_v0_29_5",
   "active": true,
-  "title": "🚀 VritraAI Is Officially Live - The Next-Gen AI Terminal Experience!",
-  "message": "VritraAI is now officially live! A fast, intelligent, and futuristic AI-powered terminal shell designed for developers who want speed, clarity, and power. Packed with smart commands, modular features, and a sleek neon interface - VritraAI brings AI directly into your command line.",
-  "released": "2025-11-25T20:30:00Z",
-  "expire_days": 5,
-  "button": true,
-  "button_text": "Explore VritraAI",
-  "button_link": "https://vritraai.vritrasec.com"
+  "title": "🆕 VritraAI v0.29.5 Update Released!",
+  "message": "A new update for VritraAI (v0.29.5) is now live! This version includes major improvements: interactive command handling fixes, enhanced error recovery system, sanitized traceback for AI suggestions, version-change notification system with one-time changelog banner, and multiple stability tweaks. Update now for a smoother and smarter AI terminal experience!",
+  "released": "2025-12-01T21:30:00Z",
+  "expire_days": 3,
+  "button": false,
+  "button_text": "",
+  "button_link": ""
 }
