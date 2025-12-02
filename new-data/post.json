@@ -1,11 +1,11 @@
 {
-  "id": "ann_2025_02_vritraai_release",
+  "id": "ann_2025_12_black_friday_sale",
   "active": true,
-  "title": "🚀 VritraAI Now Live!",
-  "message": "The next-gen AI terminal shell is officially released — featuring 100+ built-in commands, AI explanations, code review, advanced project intelligence, theme system, prompt styling, and full Linux + Termux support. Dive into the new documentation, explore the command index, and experience what an AI-enhanced shell truly feels like.",
-  "released": "2025-11-27T00:19:00Z",
-  "expire_days": 7,
+  "title": "🖤 Black Friday Mega Sale",
+  "message": "Our biggest discounts of the year are now live. Get 60% off CryptoCraX with BLKCRAX60 and 50% off CryptoHunterX + CrackBTC with BLKDUO50. The codes will expire automatically after the 72 hour sale window.",
+  "released": "2025-12-02T17:30:00Z",
+  "expire_days": 3,
   "button": true,
-  "button_text": "Explore VritraAI",
-  "button_link": "https://vritraai.vritrasec.com"
+  "button_text": "Claim Offer",
+  "button_link": "https://vritrasec.com/softwares"
 }
