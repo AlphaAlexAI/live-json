@@ -1,11 +1,11 @@
 {
-  "id": "ann_2025_12_vritraai_update_v0_29_5",
+  "id": "ann_2025_12_vritraai_update_v0_30_0",
   "active": true,
-  "title": "🆕 VritraAI v0.29.5 Update Released!",
-  "message": "A new update for VritraAI (v0.29.5) is now live! This version includes major improvements: interactive command handling fixes, enhanced error recovery system, sanitized traceback for AI suggestions, version-change notification system with one-time changelog banner, and multiple stability tweaks. Update now for a smoother and smarter AI terminal experience!",
-  "released": "2025-12-01T21:30:00Z",
-  "expire_days": 3,
-  "button": false,
-  "button_text": "",
-  "button_link": ""
+  "title": "🚀 VritraAI v0.30.0 Major Update Released!",
+  "message": "VritraAI v0.30.0 is now live with a major upgrade focused on security, execution control, and reliability. This release introduces advanced sudo command handling with validations and warnings, strict shell and bash execution restrictions, improved path navigation and traversal protection, AI-powered error recovery with fuzzy file suggestions, safer script execution, and multiple stability and security enhancements. Strongly recommended update for all users.",
+  "released": "2025-12-18T18:50:00Z",
+  "expire_days": 5,
+  "button": true,
+  "button_text": "View on PyPI",
+  "button_link": "https://pypi.org/project/vritraai/0.30.0/"
 }
