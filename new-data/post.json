@@ -1,11 +1,11 @@
 {
-  "id": "ann_2025_12_black_friday_sale",
+  "id": "ann_2025_12_vritraai_update_v0_30_0",
   "active": true,
-  "title": "🖤 Black Friday Mega Sale",
-  "message": "Our biggest discounts of the year are now live. Get 60% off CryptoCraX with BLKCRAX60 and 50% off CryptoHunterX + CrackBTC with BLKDUO50. The codes will expire automatically after the 72 hour sale window.",
-  "released": "2025-12-02T17:30:00Z",
-  "expire_days": 3,
+  "title": "🚀 VritraAI v0.30.0 Major Update Released!",
+  "message": "VritraAI v0.30.0 is now live with a major upgrade focused on security, execution control, and reliability. This release introduces advanced sudo command handling with validations and warnings, strict shell and bash execution restrictions, improved path navigation and traversal protection, AI-powered error recovery with fuzzy file suggestions, safer script execution, and multiple stability and security enhancements. Strongly recommended update for all users.",
+  "released": "2025-12-18T18:50:00Z",
+  "expire_days": 5,
   "button": true,
-  "button_text": "Claim Offer",
-  "button_link": "https://vritrasec.com/softwares"
+  "button_text": "View on PyPI",
+  "button_link": "https://pypi.org/project/vritraai/0.30.0/"
 }
