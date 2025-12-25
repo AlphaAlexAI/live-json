@@ -1,7 +1,7 @@
 {
   "banner": {
     "id": "ANN-001-id-x-new-first",
-    "active": true,
+    "active": false,
     "start_at": "01-01-2024 00:00",
     "expire_at": "22-12-2026 23:11",
     "badge": "IMPORTANT",
@@ -15,7 +15,7 @@
   },
   "announcement": {
     "id": "ann_2025_12_vritraai_updateq_v0_30_0",
-    "active": true,
+    "active": false,
     "title": "🚀 VritraAI v0.30.0 Major Update Released!",
     "message": "VritraAI v0.30.0 is now live with a major upgrade focused on security, execution control, and reliability. This release introduces advanced sudo command handling with validations and warnings, strict shell and bash execution restrictions, improved path navigation and traversal protection, AI-powered error recovery with fuzzy file suggestions, safer script execution, and multiple stability and security enhancements. Strongly recommended update for all users.",
     "released_at": "18-12-2025 18:50",
