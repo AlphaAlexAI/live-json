@@ -1,28 +1,28 @@
 {
   "banner": {
-    "id": "ANN-001-id-x-new-first",
-    "active": false,
-    "start_at": "01-01-2024 00:00",
-    "expire_at": "22-12-2026 23:11",
-    "badge": "IMPORTANT",
-    "text": "Website upgrade completed. Refund system is now strictly enforced as per policyy",
-    "link_text": "View policy",
-    "link_url": "https://example.com/refund-policy",
+    "id": "ANN-NEWYEAR-2026-OFFER-50",
+    "active": true,
+    "start_at": "01-01-2026 00:00",
+    "expire_at": "04-01-2026 23:59",
+    "badge": "NEW YEAR OFFER",
+    "text": "🎉 New Year Special: Flat 50% OFF on all premium software. Use coupon code NYX50. Limited time offer valid for 3 days only.",
+    "link_text": "Grab 50% OFF",
+    "link_url": "https://vritrasec.com/softwares/",
     "link_active": true,
-    "cta_text": "Open Dashboard",
-    "cta_url": "https://example.com/dashboard",
-    "cta_active": true
+    "cta_text": "Grab 50% OFF",
+    "cta_url": "https://vritrasec.com/softwares/",
+    "cta_active": false
   },
   "announcement": {
-    "id": "ann_2025_12_vritraai_updateq_v0_30_0",
-    "active": false,
-    "title": "🚀 VritraAI v0.30.0 Major Update Released!",
-    "message": "VritraAI v0.30.0 is now live with a major upgrade focused on security, execution control, and reliability. This release introduces advanced sudo command handling with validations and warnings, strict shell and bash execution restrictions, improved path navigation and traversal protection, AI-powered error recovery with fuzzy file suggestions, safer script execution, and multiple stability and security enhancements. Strongly recommended update for all users.",
-    "released_at": "18-12-2025 18:50",
-    "expired_at": "24-12-2025 23:29",
+    "id": "ann_2026_new_year_50_off_vritrasec",
+    "active": true,
+    "title": "🎆 New Year 2026 Offer – Flat 50% OFF",
+    "message": "Start 2026 with a special New Year offer. Get flat 50% OFF on all premium software using coupon code NYX50. This limited-time deal is valid for 3 days only, after which prices will return to normal.",
+    "released_at": "01-01-2026 00:00",
+    "expired_at": "04-01-2026 23:59",
     "button": true,
-    "button_text": "View on PyPI",
-    "button_link": "https://pypi.org/project/vritraai/0.30.0/",
-    "button_active": false
+    "button_text": "Explore Premium Software",
+    "button_link": "https://vritrasec.com/softwares/",
+    "button_active": true
   }
 }
