@@ -1,11 +1,11 @@
 {
-  "id": "ann_2025_12_vritraai_update_v0_30_0",
+  "id": "ann_d2026_new_year_offer_50_off",
   "active": true,
-  "title": "🚀 VritraAI v0.30.0 Major Update Released!",
-  "message": "VritraAI v0.30.0 is now live with a major upgrade focused on security, execution control, and reliability. This release introduces advanced sudo command handling with validations and warnings, strict shell and bash execution restrictions, improved path navigation and traversal protection, AI-powered error recovery with fuzzy file suggestions, safer script execution, and multiple stability and security enhancements. Strongly recommended update for all users.",
-  "released": "2025-12-18T18:50:00Z",
-  "expire_days": 5,
+  "title": "🎆 New Year 2026 Special – Flat 50% OFF",
+  "message": "Celebrate New Year 2026 with a flat 50% discount on all premium software. Use coupon code NYX50 at checkout. This limited-time New Year offer is valid for 3 days only, after which regular pricing will be restored.",
+  "released": "2026-01-01T00:00:00+05:30",
+  "expire_days": 3,
   "button": true,
-  "button_text": "View on PyPI",
-  "button_link": "https://pypi.org/project/vritraai/0.30.0/"
+  "button_text": "Explore Premium Software",
+  "button_link": "https://vritrasec.com/softwares/"
 }
