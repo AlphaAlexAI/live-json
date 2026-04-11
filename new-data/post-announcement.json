@@ -1,0 +1,28 @@
+{
+  "banner": {
+    "id": "ANN-FEB-2026-CRAX-CHX-BUNDLE",
+    "active": true,
+    "start_at": "01-03-2026 21:00",
+    "expire_at": "02-03-2026 21:00",
+    "badge": "24H BUNDLE",
+    "text": "🚨 Limited 24 Hours: Buy ANY CryptoCraX plan & Get 1 Month CryptoHunterX (All 10 Blockchains) FREE. No extra cost.",
+    "link_text": "Unlock Bundle",
+    "link_url": "https://vritrasec.com/softwares/cryptocrax",
+    "link_active": true,
+    "cta_text": "Unlock Bundle",
+    "cta_url": "https://vritrasec.com/softwares/cryptocrax",
+    "cta_active": false
+  },
+  "announcement": {
+    "id": "ann_2026_crax_chx_24h_bundle",
+    "active": true,
+    "title": "🔥 24 Hours Special – CryptoCraX + CryptoHunterX Bundle",
+    "message": "For the next 24 hours only, buy ANY CryptoCraX plan and receive 1 Month CryptoHunterX (All 10 Major Blockchains) completely FREE. This is a limited-time strategic bundle. No hidden conditions. Once expired, the offer will not return.",
+    "released_at": "01-03-2026 21:00",
+    "expired_at": "02-03-2026 21:00",
+    "button": true,
+    "button_text": "Get CryptoCraX Now",
+    "button_link": "https://vritrasec.com/softwares/cryptocrax",
+    "button_active": true
+  }
+}

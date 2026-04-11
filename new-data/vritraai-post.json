@@ -1,0 +1,11 @@
+{
+  "id": "ann_d2026_new_year_offer_50_off",
+  "active": true,
+  "title": "🎆 New Year 2026 Special – Flat 50% OFF",
+  "message": "Celebrate New Year 2026 with a flat 50% discount on all premium software. Use coupon code NYX50 at checkout. This limited-time New Year offer is valid for 3 days only, after which regular pricing will be restored.",
+  "released": "2026-01-01T00:00:00+05:30",
+  "expire_days": 3,
+  "button": true,
+  "button_text": "Explore Premium Software",
+  "button_link": "https://vritrasec.com/softwares/"
+}

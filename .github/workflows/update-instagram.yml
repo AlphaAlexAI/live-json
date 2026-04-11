@@ -1,0 +1,44 @@
+# Required repository secrets:
+#   API_HOST — HTTP hostname for userinfo (no https://)
+#   API_KEY  — subscription key for that API
+#   USERS    — comma-separated Instagram usernames (same as local .env)
+name: Instagram followers update
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-followers
+  cancel-in-progress: true
+
+jobs:
+  update-instagram-json:
+    runs-on: ubuntu-latest
+    env:
+      API_HOST: ${{ secrets.API_HOST }}
+      API_KEY: ${{ secrets.API_KEY }}
+      USERS: ${{ secrets.USERS }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run instagram_followers.py
+        run: python3 scripts/instagram_followers.py
+
+      - name: Commit data/instagram.json if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/instagram.json
+          if git diff --cached --quiet; then
+            echo "No changes to data/instagram.json — nothing to commit."
+          else
+            git commit -m "chore: update data/instagram.json [skip ci]"
+            git push
+          fi
