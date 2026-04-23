@@ -25,12 +25,28 @@ from curl_cffi import requests
 INSTAGRAM_JSON_PATH = Path(__file__).resolve().parent.parent / "data" / "instagram.json"
 _IG_APP_ID = "936619743392459"
 _FINGERPRINTS = [
+    "chrome136",
+    "chrome131",
     "chrome124",
     "chrome123",
     "chrome120",
-    "edge120",
-    "safari17",
+    "chrome119",
+    "chrome116",
+    "chrome110",
+    "chrome107",
+    "chrome104",
+    "chrome101",
+    "chrome100",
+    "chrome99",
+    "edge101",
+    "edge99",
+    "safari15_5",
+    "safari15_3",
+    "safari18_0",
 ]
+_MAX_ATTEMPTS_PER_FINGERPRINT = 2
+_MAX_FINGERPRINT_ROUNDS = 3
+_UNSUPPORTED_FINGERPRINTS: set[str] = set()
 
 
 def info(message: str) -> None:
@@ -45,6 +61,10 @@ def parse_users_from_env() -> list[str]:
     return [p for p in parts if p]
 
 
+def _is_unsupported_impersonation_error(err: Exception) -> bool:
+    return "is not supported" in str(err).lower()
+
+
 def fetch_follower_count(username: str) -> int:
     q = urllib.parse.quote(username, safe="")
     url = f"https://i.instagram.com/api/v1/users/web_profile_info/?username={q}"
@@ -53,23 +73,43 @@ def fetch_follower_count(username: str) -> int:
         "accept-language": "en-US,en;q=0.9",
         "referer": "https://www.instagram.com/",
     }
-    for fp in _FINGERPRINTS:
-        info(f"request web_profile_info (username={username}, fp={fp})")
-        try:
-            resp = requests.get(url, headers=headers, impersonate=fp, timeout=20)
-            if resp.status_code != 200:
-                info(f"response HTTP {resp.status_code} (retrying)")
-                time.sleep(random.uniform(2, 5))
-                continue
-            payload = resp.json()
-            n = int(payload["data"]["user"]["edge_followed_by"]["count"])
-            info(f"parsed follower_count={n}")
-            return n
-        except Exception as e:
-            info(f"request failed ({e})")
-            time.sleep(random.uniform(2, 5))
+    for round_idx in range(1, _MAX_FINGERPRINT_ROUNDS + 1):
+        fps = [fp for fp in _FINGERPRINTS if fp not in _UNSUPPORTED_FINGERPRINTS]
+        if not fps:
+            raise SystemExit(
+                "No supported fingerprints left. "
+                "Update _FINGERPRINTS to versions supported by current curl_cffi build."
+            )
+        random.shuffle(fps)
+        info(f"fingerprint round {round_idx}/{_MAX_FINGERPRINT_ROUNDS}")
+        for fp in fps:
+            for attempt in range(1, _MAX_ATTEMPTS_PER_FINGERPRINT + 1):
+                info(
+                    "request web_profile_info "
+                    f"(username={username}, fp={fp}, attempt={attempt}/{_MAX_ATTEMPTS_PER_FINGERPRINT})"
+                )
+                try:
+                    resp = requests.get(url, headers=headers, impersonate=fp, timeout=20)
+                    if resp.status_code != 200:
+                        info(f"response HTTP {resp.status_code} (rotating/retrying)")
+                        time.sleep(random.uniform(2, 5))
+                        continue
+                    payload = resp.json()
+                    n = int(payload["data"]["user"]["edge_followed_by"]["count"])
+                    info(f"parsed follower_count={n}")
+                    return n
+                except Exception as e:
+                    if _is_unsupported_impersonation_error(e):
+                        info(f"fingerprint unsupported by current curl_cffi build (fp={fp}), skipping")
+                        _UNSUPPORTED_FINGERPRINTS.add(fp)
+                        break
+                    info(f"request failed ({e})")
+                    time.sleep(random.uniform(2, 5))
     raise SystemExit(
-        f"Unable to fetch follower count for {username} after trying all fingerprints"
+        "Unable to fetch follower count for "
+        f"{username} after {_MAX_FINGERPRINT_ROUNDS} rounds "
+        f"x {len(_FINGERPRINTS)} fingerprints "
+        f"x {_MAX_ATTEMPTS_PER_FINGERPRINT} attempts"
     )
 
 
